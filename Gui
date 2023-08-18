@@ -1,14 +1,10 @@
-local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
-local Window = Library.CreateLib("Name", "DarkTheme")
-local Tab = Window:NewTab("Key system")
-local Section = Tab:NewSection("Key system")
-Section:NewButton("Hoho Hub (V3) ", "ButtonInfo", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
-    print("Clicked")
-end)
-local Tab = Window:NewTab("No key")
-local Section = Tab:NewSection("Free System")
-Section:NewButton("BLCK HUB", "ButtonInfo", function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/BLCK"))()
-    print("Clicked")
-end)
+local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
+
+Notification:Notify(
+    {Title = "Blox fruits Script", Description = "Coded by Unknownproooolucky"},
+    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "option"},
+    {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84), Callback = function(State) print(tostring(State)) end}
+)
+
+
